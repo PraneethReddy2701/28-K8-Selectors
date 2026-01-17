@@ -17,3 +17,7 @@ spec:
     operator: "Equal"
     value: "praneeth"
     effect: "NoSchedule"
+  - key: "age"
+    operator: "Equal"
+    value: "24"
+    effect: "NoExecute"
