@@ -6,15 +6,15 @@ metadata:
     purpose: node-affinity-required-practice
     project: roboshop
 spec:
-  # affinity:
-  #   nodeAffinity:
-  #     requiredDuringSchedulingIgnoredDuringExecution:
-  #       nodeSelectorTerms:
-  #       - matchExpressions:
-  #         - key: hardware
-  #           operator: In 
-  #           values: 
-  #           - gpu
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: hardware
+            operator: In 
+            values: 
+            - gpu
   containers:
   - name: nginx
     image: nginx
