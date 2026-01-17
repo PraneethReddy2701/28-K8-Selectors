@@ -7,7 +7,7 @@ metadata:
     project: roboshop
 spec:
   affinity:
-    nodeAntiAffinity:
+    nodeAffinity:
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 1
         preference:
