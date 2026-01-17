@@ -18,6 +18,15 @@ metadata:
     app-name: Pod-2
     purpose: pod-affinity-required
 spec:
+  affinity:
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+          - key: app-name
+            operator: In
+            values: 
+            - Pod-1
   containers:
   - name: nginx
     image: nginx
