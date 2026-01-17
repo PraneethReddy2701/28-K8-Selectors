@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: pod-affinity-required
+  labels:
+    app-name: Pod-1
+    purpose: pod-affinity-required
+spec:
+  containers:
+  - name: nginx
+    image: nginx
