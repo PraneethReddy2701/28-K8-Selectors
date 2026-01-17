@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-affinity-required
+  labels:
+    purpose: node-affinity-required-practice
+    project: roboshop
+spec:
+  # affinity:
+  #   nodeAffinity:
+  #     requiredDuringSchedulingIgnoredDuringExecution:
+  #       nodeSelectorTerms:
+  #       - matchExpressions:
+  #         - key: hardware
+  #           operator: In 
+  #           value: gpu
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: Always
