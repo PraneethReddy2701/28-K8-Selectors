@@ -7,7 +7,7 @@ metadata:
     project: roboshop
 spec:
   affinity:
-    nodeAffinity:
+    nodeAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
         - matchExpressions:
