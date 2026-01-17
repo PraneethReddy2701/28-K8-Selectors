@@ -6,16 +6,16 @@ metadata:
     purpose: node-anti-affinity-preferred-practice
     project: roboshop
 spec:
-  # affinity:
-  #   nodeAffinity:
-  #     preferredDuringSchedulingIgnoredDuringExecution:
-  #     - weight: 1
-  #       preference:
-  #         matchExpressions:
-  #         - key: hardware
-  #           operator: NotIn
-  #           values: 
-  #           - gpu
+  affinity:
+    nodeAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
+          - key: hardware
+            operator: NotIn
+            values: 
+            - gpu
   containers:
   - name: nginx
     image: nginx
