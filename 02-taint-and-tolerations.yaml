@@ -3,7 +3,7 @@ kind: Pod
 metadata: 
   name: taints-tolerations
   labels:
-    purpose: taints and tolerations practice
+    purpose: taints-tolerations-practice
     project: roboshop
 spec:
   containers:
