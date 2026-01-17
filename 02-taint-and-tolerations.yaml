@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: taints and tolerations
+  name: taints-tolerations
   labels:
-    purpose: taints-and-tolerations-practice
+    purpose: taints and tolerations practice
     project: roboshop
 spec:
   containers:
